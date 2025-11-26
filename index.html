@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaad Khamis - Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <canvas id="three-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo font-heading">My Portfolio</div>
+                <nav id="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<div class="header-buttons">
+    <button id="toggle-mode" aria-label="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+    <button id="hamburger-btn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+    </button>
+</div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h3 style="font-size: 200%;">Hello, It's Me</h3>
+                    <h1 class="font-heading">Mosaad Khamis</h1>
+                    <h2><b style="color: #dfdfdf;">And i'm a</b> Frontend Development</h2>
+                    <p>
+                        I'm Mosaad Khamis, I’m a Front-End Developer specializing in React. 
+                        I enjoy building responsive, user-friendly web interfaces and focusing on clean code and smooth user experiences.
+                         I’m always learning new technologies and improving my skills through real projects.
+                    </p>
+                    <div class="social-links hero-social">
+                        <a href="https://github.com/M19929?tab=repositories" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mosaad-elabido-475943320/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:mosaadebido@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/mosaad_khamis3771/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1G9AXRMFYA/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1mOMDOBWPxfYpvQQtzxiB6Nz4sr9hdgHc/view?usp=drive_link" class="download-cv-btn" target="_blank" aria-label="Download My CV">
+                        <i class="fas fa-download"></i> Download My CV
+                    </a>
+                </div>
+                <div class="custom-image-shape scale-up">
+                    <img src="Images/mosaad.jpg" alt="Mosaad Khamis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">About Me</h2>
+                <p>I’m a Front-End Developer specializing in React. 
+                    I enjoy building responsive, user-friendly web interfaces and focusing on clean code and smooth user experiences. 
+                    I’m always learning new technologies and improving my skills through real projects.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <h3 class="font-heading about-tagline">Trusted UI... Smart Development</h3>
+                    <p>
+                        I'm Mosaad Khamis, a Front-End Developer from Egypt, passionate about building
+                        fast, accessible, and beautiful web interfaces.
+                    </p>
+                    <p>
+                        My journey began with curiosity about how the web works — that turned into a
+                        focus on crafting pixel-perfect user experiences. I specialize in <strong>React</strong>,
+                        <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>, and I use tools like
+                        Tailwind, React Router, and state management libraries to build scalable apps.
+                    </p>
+                    <p>
+                        As a freelance developer, I collaborate with businesses to turn ideas into
+                        responsive, user-friendly products. I care about performance, accessibility,
+                        and maintainable code.
+                    </p>
+                    <p>
+                        When I'm not coding, I’m learning new front-end techniques and building
+                        projects for my portfolio. Let’s connect and create something great together.
+                    </p>
+                    
+                    <div class="stats">
+                        <div class="stat-item stats-item">
+                            <div class="number">2+</div>
+                            <div class="label">Years Experience</div>
+                        </div>
+                        <div class="stat-item stats-item">
+                            <div class="number">11+</div>
+                            <div class="label">Certifications</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-image-shape slide-in-right">
+                    <img src="Images/mosaad.jpg" alt="Mohamed Karem Ali">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" style="background: rgba(15, 23, 42, 0.5);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">Education</h2>
+                <p>Academic Background</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Science </h3>
+                        <span class="period">2023 - 2027 (Expected) | Egyptian E-Learning University (EELU) </span>
+                        <p>
+                            Faculty of Computers and Information Technology, gaining comprehensive knowledge in computer science and IT with focus on cybersecurity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">Certifications</h2>
+                <p>Professional Credentials and Training</p>
+            </div>
+            <div class="skills-grid">
+
+                <!-- Certificates Networking -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/Certificates Networking.jpeg" alt="CCNA Certification introduction" class="cert-image">
+                    </div>
+                    <h3>CCNA Certification – Introduction</h3>
+                    <p class="cert-status">Currently Studying</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Fundamentals of networking and Cisco technologies.</p>
+                </div>
+            
+                <!-- Frontend React Udemy -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="images/frontend.udemy.jpg" alt="Frontend react udemy" class="cert-image">
+                    </div>
+                    <h3>Frontend React – Udemy</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Building dynamic interfaces using React and modern frontend tools.</p>
+                </div>
+            
+                <!-- Frontend React ITI -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/iti react1.png" alt="Frontend react iti" class="cert-image">
+                    </div>
+                    <h3>Frontend React – ITI</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> React components, routing, hooks, and UI development.</p>
+                </div>
+            
+                <!-- SC-900 Badge -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/microsoft-certified-security-compliance-and-identity-fundamentals.png" alt="sc-900 badge" class="cert-image">
+                    </div>
+                    <h3>SC-900 – Microsoft Security, Compliance & Identity</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Identity, access, security fundamentals, and cloud protection concepts.</strong></p>
+                </div>
+            
+                <!-- SC-900 Certificate -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/sc 900 certificates.png" alt="sc-900 microsoft" class="cert-image">
+                    </div>
+                    <h3>SC-900 – Microsoft Certified</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Microsoft cloud security, compliance management, and identity solutions.</p>
+                </div>
+            
+                <!-- Cybersecurity for All -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/cs for all.jpeg" alt="cyber security for all Mahara-Tech" class="cert-image">
+                    </div>
+                    <h3>Cyber Security for All – Mahara Tech</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Foundational cybersecurity, online safety, and threat awareness.</p>
+                </div>
+            
+                <!-- Python Udemy -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/hacking.udemy.jpg" alt="hacking udemy" class="cert-image">
+                    </div>
+                    <h3>Hacking & Security – Udemy</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Ethical hacking basics, system vulnerabilities, and security testing.</p>
+                </div>
+            
+                <!-- Python Mahara Tech -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/mahratch python.png" alt="pythone mahra tech" class="cert-image">
+                    </div>
+                    <h3>Python Programming – Mahara Tech</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Python fundamentals, scripting, and problem-solving.</p>
+                </div>
+            
+                <!-- Device Configuration Certificate -->
+                <div class="skill-category">
+                    <div class="cert-badge">
+                        <img src="Images/download.png" alt="mobile app sprint" class="cert-image">
+                    </div>
+                    <h3>Mobile App Sprint</h3>
+                    <p class="cert-status">Completed</p>
+                    <p class="cert-focus"><strong>Focus:</strong> Basic app development concepts and mobile technologies.</p>
+                </div>
+            
+            </div>
+            
+            <div style="text-align: center; margin-top: 130px;">
+                <a href="certificates.html" class="btn btn-reveal">
+                    <span>Show All Certificates</span>
+                </a>
+            </div>
+        </div>
+            
+    </section>
+
+    <section id="skills" style="background: rgba(15, 23, 42, 0.5);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">Skills & Tools</h2>
+                <p>Building modern web interfaces & mastering essential networking concepts</p>
+            </div>
+    
+            <div class="skills-grid">
+                <!-- Front-End Development -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Front-End Development</h3>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React.js</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript (ES6+)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML & CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Responsive Design</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Front-End Tools -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Front-End Tools & Libraries</h3>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Tailwind CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React Router</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Redux / State Management</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Git & GitHub</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Cisco Networking Basics -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-network-wired"></i> Cisco Networking Fundamentals</h3>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Routing & Switching (Basics)</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Subnetting & IP Addressing</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>VLANs & Switching Concepts</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Cisco Packet Tracer</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Additional Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Additional Skills</h3>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>UI/UX Principles</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>API Integration</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Problem Solving</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Team Collaboration</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill-category">
+                    <h3><i class="fas fa-user-tie"></i> Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Client Communication</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Problem-Solving</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Freelancing & Project Management</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%; background: var(--gradient-primary);"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Self-Learning</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%; background: var(--gradient-secondary);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">Work Experience</h2>
+                <p>Front-End Development Experience</p>
+            </div>
+    
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Front-End Developer (Freelancer)</h3>
+                        <span class="period">2024 - Present</span>
+                        <ul>
+                            <li>Building modern, responsive web applications using React.js and JavaScript (ES6+)</li>
+                            <li>Developing reusable UI components and improving site performance</li>
+                            <li>Implementing routing, state management, and API integration</li>
+                            <li>Using Tailwind CSS and modern CSS techniques for clean and scalable UI design</li>
+                            <li>Collaborating with clients to convert ideas into functional user-friendly interfaces</li>
+                            <li>Optimizing websites for SEO, accessibility, and mobile devices</li>
+                            <li>Working with Git/GitHub for version control and project management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="services" style="background: rgba(15, 23, 42, 0.5);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">Services I Offer</h2>
+                <p>Professional front-end development services tailored to your project needs</p>
+            </div>
+    
+            <div class="services-grid">
+    
+                <div class="service-item scale-up">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>React Web Application Development</h3>
+                    <p>Building modern, fast, and interactive web apps using React.js and JavaScript (ES6+).</p>
+                </div>
+    
+                <div class="service-item scale-up">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive UI / UX Design</h3>
+                    <p>Creating clean, responsive, and user-friendly interfaces for all screen sizes.</p>
+                </div>
+    
+                <div class="service-item scale-up">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Custom UI Components</h3>
+                    <p>Developing reusable and scalable components using React, Tailwind CSS, and modern UI libraries.</p>
+                </div>
+    
+                <div class="service-item scale-up">
+                    <div class="service-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>API Integration</h3>
+                    <p>Connecting front-end interfaces with APIs and handling dynamic data efficiently.</p>
+                </div>
+    
+                <div class="service-item scale-up">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Improving loading speed, SEO, accessibility, and overall application performance.</p>
+                </div>
+    
+                <div class="service-item scale-up">
+                    <div class="service-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Version Control (Git/GitHub)</h3>
+                    <p>Managing code versions, collaborating on projects, and maintaining clean repositories.</p>
+                </div>
+    
+                <div class="service-item scale-up">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Consulting & Support</h3>
+                    <p>Helping clients with UI improvements, React best practices, and project structure guidance.</p>
+                </div>
+    
+            </div>
+    
+            <div class="why-choose-me fade-in">
+                <h3 class="font-heading">Why Choose Me?</h3>
+                <p style="text-align: center; color: #E0E7FF; max-width: 800px; margin: 0 auto;">
+                    Clean and modern code, strong communication, fast delivery, affordable pricing, and a passion for creating beautiful user experiences.
+                </p>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">Latest Projects</h2>
+                <p>A collection of my most recent and important projects</p>
+            </div>
+    
+            <div class="projects-grid">
+    
+                <!-- Movie App Project -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(Images/moive\ app.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Movie App (React)</h3>
+                        <p>
+                            A dynamic movie browsing application built with React.  
+                            It fetches real-time movie data using APIs, includes search functionality,  
+                            detailed movie pages, category filtering, and a clean modern UI.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Movie DB</span>
+                        </div>
+                        <a href="https://m19929.github.io/Movie-App/" target="_blank" class="btn btn-secondary" style="padding: 0.9rem 6rem; font-size: 1rem; color: #4faec9;">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Details
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Roadmap Project -->
+      <div class="project-card">
+       <div class="project-image" 
+        style="background-image: url(Images/Rodemap.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+       </div>
+
+       <div class="project-info">
+        <h3>Roadmap Website</h3>
+        <p>
+            An interactive roadmap website that guides users through structured learning paths.  
+            Includes organized sections, clean UI, responsive layout, and smooth navigation  
+            to help beginners follow a clear step-by-step journey.
+        </p>
+
+        <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Responsive Design</span>
+        </div>
+
+        <a href="https://m19929.github.io/Roadmap/" target="_blank" 
+           class="btn btn-secondary" 
+           style="padding: 0.9rem 6rem; font-size: 1rem; color: #4faec9;">
+            <i class="fas fa-external-link-alt"></i>
+            View Details
+           </a>
+          </div>
+          </div>
+
+    
+                <!-- Mealify Project -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(Images/mealify.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mealify – Food Website</h3>
+                        <p>
+                            A responsive food-themed landing page built with modern UI design,  
+                            showcasing meals, categories, offers, and contact sections.  
+                            Focused on clean layouts and smooth user navigation.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">UI Design</span>
+                        </div>
+                        <a href="https://m19929.github.io/Mealify/" target="_blank" class="btn btn-secondary" style="padding: 0.9rem 6rem; font-size: 1rem; color: #4faec9;">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Details
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div style="text-align: center; margin-top: 130px;">
+            <a href="Projects.html" class="btn-waterfall-glow">
+                Show All Projects
+            </a>
+        </div>
+    </section>    
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="font-heading">Get In Touch</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>
+                        If you'd like to work together or just say hi, feel free to drop me
+                        a message below.
+                    </p>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/mosaad-elabido-475943320/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/M19929?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:mosaadebido@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/myznzpjp" method="POST" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="name" required />
+                        <label>Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required />
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Message</label>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="a">
+                <a href="https://drive.google.com/file/d/1mOMDOBWPxfYpvQQtzxiB6Nz4sr9hdgHc/view?usp=drive_link" class="download-cv-btn" target="_blank" aria-label="Download My CV">
+                    <i class="fas fa-download"></i> Download My CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content fade-in">
+                <div>
+                    <h1 style="font-family: Segoe UI, Tahoma, Arial, sans-serif; font-size: 2rem; line-height:1; letter-spacing:1px; margin:0; white-space:nowrap; padding:18px 26px; display:inline-block;">
+                        <span style="color:#1e73be; font-style:italic; font-weight:600; transform:skewX(-5deg); display:inline-block;">Developed</span>
+                        <span style="color:#d94a2d; font-style:italic; font-weight:800; transform:skewX(-8deg); display:inline-block; margin-inline-start:8px;">BY</span>
+                        <span class="logo font-heading" style="font-size: 2rem;">Mosaad Khamis</span>
+                    </h1>
+                </div>
+                <p style="color: var(--light-gray); max-width: 600px; font-size: 1.2rem;">
+                    Frontend Development | Freelancer
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>
